@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #050505;
+  color: #ffff;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo h1 {
+  margin-left: 0.5rem;
+}
+.navbarItens {
+  display: flex;
+  list-style: none;
+}
+.navbarItens li {
+  margin-right: 1.3rem;
+}
+.navbarItens a {
+  color: #ffff;
+  text-decoration: none;
+  padding: 5px;
+  transition: 0.4s;
+  border-bottom: 2px solid transparent;
+}
+.navbarItens a:hover {
+  border-bottom: 2px solid #fff;
+}

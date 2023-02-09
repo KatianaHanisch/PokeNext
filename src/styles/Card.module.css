@@ -1,0 +1,33 @@
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  width: 23%;
+  border-radius: 1rem;
+  border: 1px solid #080000;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+}
+.cardContainer .cardId {
+  margin: 0.5rem 0;
+  padding: 5px;
+  background-color: #b80606;
+  border-radius: 4px;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardContainer .cardName {
+  font-size: 1.5rem;
+}
+.cardContainer a {
+  margin: 0.5rem;
+  background-color: #000000;
+  padding: 8px;
+  color: #ffff;
+  border-radius: 5px;
+  text-decoration: none;
+}
