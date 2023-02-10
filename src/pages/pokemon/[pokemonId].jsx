@@ -42,13 +42,23 @@ export default function Pokemon({ pokemon }) {
         width="200"
         height="200"
         alt={pokemon.name}
+        priority
       />
       <div>
-        <h3>Número: </h3>
-        <p>#{pokemon.id}</p>
-      </div>
-      <div>
-        <h3>Tipo: </h3>
+        <h3>Habilidades</h3>
+        <div className={styles.pokemonTipoContainer}>
+          {pokemon.abilities.map((item, index) => (
+            <span
+              key={index}
+              className={`${styles.tipoPokemon} ${
+                styles["type_" + item.ability.name]
+              }`}
+            >
+              {item.ability.name}
+            </span>
+          ))}
+        </div>
+        <h3>Tipo </h3>
         <div className={styles.pokemonTipoContainer}>
           {pokemon.types.map((item, index) => (
             <span
@@ -64,11 +74,15 @@ export default function Pokemon({ pokemon }) {
       </div>
       <div className={styles.dataContainer}>
         <div>
-          <h4>Altura:</h4>
+          <h4>Experiência</h4>
+          <p>{pokemon.base_experience}</p>
+        </div>
+        <div className={styles.dataStyle}>
+          <h4>Altura</h4>
           <p>{pokemon.height * 10} cm</p>
         </div>
-        <div className={styles.dataHeight}>
-          <h4>Peso:</h4>
+        <div className={styles.dataStyle}>
+          <h4>Peso</h4>
           <p>{pokemon.weight / 10} kg</p>
         </div>
       </div>

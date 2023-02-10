@@ -12,13 +12,10 @@ export default function Card({ pokemon }) {
         height="150"
         alt={pokemon.name}
       />
-      <div className={styles.cardContext}>
-        {/* <p className={styles.cardId}>#{pokemon.id}</p> */}
-        <h3 className={styles.cardName}>{pokemon.name}</h3>
-        <Link href={`/pokemon/${pokemon.id}`} className={styles.btnDetalhes}>
-          Ver mais
-        </Link>
-      </div>
+      <p className={styles.cardId}>#{pokemon.id}</p>
+      <h3 className={styles.cardName}>{pokemon.name}</h3>
+
+      <Link href={`/pokemon/${pokemon.id}`}>Ver mais</Link>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "../styles/About.module.css";
 
@@ -23,12 +24,14 @@ export default function About() {
         minima, officia sit quos, praesentium, magni ipsam necessitatibus.
       </p>
       <div className={styles.containerCardAbout}>
-        <Image
-          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`}
-          width="300"
-          height="300"
-          alt="Imagem pokemon"
-        />
+        <Link href={`/pokemon/${id}`}>
+          <Image
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`}
+            width="300"
+            height="300"
+            alt="Imagem pokemon"
+          />
+        </Link>
       </div>
     </div>
   );
