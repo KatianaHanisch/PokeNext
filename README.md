@@ -1,10 +1,14 @@
 # Estudos de Next.js
 
+Esse projeto consiste em um website para exibição de pokemons e suas principais informações.
+
 ![myimage-alt-tag](https://github.com/KatianaHanisch/PokeNext/blob/36371a2b0d2b8646c97c3f51c865eebaacef7dc5/public/images/PokeNext.jpg)
 
 
 
 ## Getting Started
+
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
