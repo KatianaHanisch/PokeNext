@@ -13,7 +13,9 @@ export default function Navbar() {
           height="30"
           alt="PokeNext"
         />
-        <h1>Pokenext</h1>
+        <h1>
+          <Link href="/">PokeNext</Link>
+        </h1>
       </div>
       <ul className={styles.navbarItens}>
         <li>

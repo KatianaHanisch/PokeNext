@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../../styles/Pokemon.module.css";
 
 export const getStaticPaths = async () => {
-  const maxPokemons = 52;
+  const maxPokemons = 252;
   const api = "https://pokeapi.co/api/v2/pokemon";
 
   const response = await fetch(`${api}/?limit=${maxPokemons}`);
@@ -38,7 +38,7 @@ export default function Pokemon({ pokemon }) {
     <div className={styles.pokemonContainer}>
       <h1 className={styles.pokemonName}>{pokemon.name}</h1>
       <Image
-        src={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}`}
+        src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg`}
         width="200"
         height="200"
         alt={pokemon.name}

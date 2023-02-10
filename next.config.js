@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+module.exports = {
   images: {
-    domains: ["cdn.traction.one"],
+    domains: ["raw.githubusercontent.com"],
   },
 };
+// const nextConfig = {
+//   reactStrictMode: true,
+//   images: {
+//     domains: ["raw.githubusercontent.com"],
+//   },
+// };
 
-module.exports = nextConfig;
+// module.exports = nextConfig;

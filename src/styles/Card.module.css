@@ -9,6 +9,7 @@
   border-radius: 1rem;
   border: 1px solid #080000;
   box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 .cardContainer .cardId {
   margin: 0.5rem 0;
@@ -22,12 +23,23 @@
 }
 .cardContainer .cardName {
   font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.cardContext {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .cardContainer a {
-  margin: 0.5rem;
   background-color: #000000;
-  padding: 8px;
+  padding: 5px;
   color: #ffff;
   border-radius: 5px;
+  font-size: 1rem;
   text-decoration: none;
+}
+.cardContainer:hover {
+  background-color: #f5f5f5;
+  margin-top: -30px;
+  transition: 0.3s;
 }

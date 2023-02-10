@@ -5,7 +5,7 @@ import Card from "../components/Card";
 import styles from "../styles/Home.module.css";
 
 export async function getStaticProps() {
-  const maxPokemons = 52;
+  const maxPokemons = 252;
   const api = "https://pokeapi.co/api/v2/pokemon";
 
   const response = await fetch(`${api}/?limit=${maxPokemons}`);
