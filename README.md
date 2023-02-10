@@ -1,6 +1,6 @@
 # Estudos de Next.js
 
-![myimage-alt-tag](https://github.com/KatianaHanisch/PokeNext/blob/d994d0a94e46c43de4f943d3b9d437a6b185fe57/public/images/PokeNext.jpg)
+![myimage-alt-tag](https://github.com/KatianaHanisch/PokeNext/blob/36371a2b0d2b8646c97c3f51c865eebaacef7dc5/public/images/PokeNext.jpg)
 
 
 
